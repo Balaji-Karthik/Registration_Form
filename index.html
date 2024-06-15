@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <title>Register Page</title>
+</head>
+<body>
+
+    <div class="register-container">
+    <div class="box">
+    <form action="" name="formdetails" onsubmit="return validation()">
+        <h1 class="h1">Register Form</h1>
+
+        <p id="result"></p>
+       <div class="inputfield">
+        <i class="bi bi-person"></i>
+        <input type="text" name="fullnamee" placeholder="Full Name">
+       </div>
+       
+       <p id="result"></p>
+       <div class="inputfield">
+        <i class="bi bi-envelope"></i>
+        <input type="email" name="email" placeholder="Email" >
+       </div>
+
+       <p id="result"></p>
+       <div class="inputfield">
+        <i class="bi bi-phone"></i>
+        <input type="tel" name="phonenumber" placeholder="Phone Number">
+       </div>
+
+       <p id="result"></p>
+       <div class="inputfield">
+        <i class="bi bi-lock"></i>
+        <input type="password" name="Password" placeholder="Password">        
+       </div>
+
+       <p id="result"></p>
+       <div class="inputfield">
+        <i class="bi bi-lock"></i>
+        <input type="password" name="conformpass" placeholder="Re-Enter">
+       </div>
+
+       <div class="button">
+        <input type="submit" class="btn" value="Register" >
+       </div>
+    </form>
+    </div>
+
+    <div class="popup" id="popup">
+        <i class="bi bi-check2-circle"></i> <br> <br> <br> <br>
+        <h2>Thank You..!</h2>
+        <p>Your were Registered Sucessfully</p>
+        <a href="index.html"><button>OK</button></a>
+    </div>
+</div>
+<script src="script.js"></script>
+    
+</body>
+</html>

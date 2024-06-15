@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(bg.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.register-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    /* position: relative; */
+    width: 340px;
+    height: 480px;
+    border: 3px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    box-shadow: 0px 5px 50px rgb(81, 84, 76);
+}
+.h1{
+    color: #cfbbbb;
+    text-align: center;
+    font-size: 28px;
+    
+}
+.box .inputfield{
+    position: relative;
+    margin: 25px 0;
+    width: 100% ;
+    border-bottom: 2px solid black;
+}
+.box .inputfield input{
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 11px;
+    color: rgb(109, 149, 184);
+    font-size: 20px;
+}
+input::placeholder{
+    color: rgb(109, 149, 184);
+}
+.btn{
+    color: rgb(109, 149, 184);
+    background: rgb(26, 26, 31);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    height: 40px;
+}
+.btn:hover{
+    box-shadow: 0px 3px 5px #79719b;
+}
+
+i{
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 0;
+}
+#result{
+    color: red;
+    position: relative;
+    font-weight: 600;
+    top: 25px;
+}
+.popup{
+    width: 330px;
+    background-color: white;
+    border-radius: 8%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .4s, top .4s;
+    visibility: hidden;
+    text-align: center;
+    padding:  0 30px 30px;
+    height: 300px;
+}
+
+.bi-check2-circle{
+    color: rgb(5, 244, 97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 50px;
+}
+.popup button{
+    width: 100%;
+    background: rgb(17, 250, 17);
+    padding: 5px;
+    margin-top: 30%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.popup button:hover{
+    box-shadow: 0 5px 5px green;
+}
+
+.popup a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.open-slide{
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
